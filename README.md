@@ -9,7 +9,14 @@ This is an OpenCV2 version for algorithm described by paper:
 
 ## Usage
 
-Refer to Readme.txt and main.cpp 
+
+	SharedMatting sm;
+	sm.loadImage(pathToImage); // load image from pathToImage
+	sm.loadTrimap(pathToTrimap); // load Trimap from pathToTrimap
+	sm.solveAlpha(); // do the shared matting algorithm
+	sm.save(pathToSave); // save result image
+
+For details, please refer to Readme.txt and main.cpp. 
 
 ## Example
 
